@@ -15,6 +15,16 @@ You do not need to have PSO or PSE Explorer installed on the cluster.
 
 # Scripts
 
+## Prepare to use the scripts
+The scripts are ready to use, however you should check the `values-good.yaml` configuration file, if you are going to use the install/upgrade scripts for PSO.
+
+```
+vi values-good.yaml
+```
+
+
+## Script library
+
 | Script                                      | Description                                                                                                                                                |
 |------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `install-pso-explorer.sh` | Script to install Pure Service Orchestrator™ Explorer on your Kubernetes cluster. PSO does not have to be installed. If you want to use a LoadBalancer to access PSO Explorer and don't have a Load Balancer installed on your cluster, also check out `metallb/install-metallb.sh` |
