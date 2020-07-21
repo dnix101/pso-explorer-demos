@@ -39,7 +39,8 @@ vi metallb/metallb-config.yaml
 Next we can deploy metallb to our cluster, using the install script:
 
 ```
-metallb/install-metallb.sh
+cd metallb
+./install-metallb.sh
 ```
 
 
