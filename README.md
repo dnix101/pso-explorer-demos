@@ -15,6 +15,16 @@ You do not need to have PSO or PSE Explorer installed on the cluster.
 
 # Scripts
 
+## Prepare to use the scripts
+The scripts are ready to use, however you should check the `values-good.yaml` configuration file, if you are going to use the install/upgrade scripts for PSO.
+
+```
+vi values-good.yaml
+```
+
+
+## Script library
+
 | Script                                      | Description                                                                                                                                                |
 |------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `install-pso-explorer.sh` | Script to install Pure Service Orchestrator™ Explorer on your Kubernetes cluster. PSO does not have to be installed. If you want to use a LoadBalancer to access PSO Explorer and don't have a Load Balancer installed on your cluster, also check out `metallb/install-metallb.sh` |
@@ -22,7 +32,7 @@ You do not need to have PSO or PSE Explorer installed on the cluster.
 | `install-pso-bad.sh` | Script to install Pure Service Orchestrator™ on your cluster with a faulty configuration, which will allow you to show the YAML verification feature of PSO Explorer. |
 | `upgrade-pso-good.sh` | Script to upgrade Pure Service Orchestrator™ configuration to a working configuration. Make sure you add your own FlashArray / FlashBlade credentials to `values-good.yaml`. |
 | `upgrade-pso-bad.sh` | Script to upgrade Pure Service Orchestrator™ configuration to a faulty configuration, which will allow you to show the YAML verification feature of PSO Explorer. |
-| `remove_pso.sh` | Script to uninstall Pure Service Orchestrator™ from the Kubernetes cluster |
+| `remove_pso.sh` | Script to uninstall both Pure Service Orchestrator™ and PSO Explorer from the Kubernetes cluster |
 | `deploy_workloads.sh` | Script to deploy some workloads: 4x Wordpress deployment, 2x Workbench block, 1x Workench file, 1x Elastic Search (3-node cluster) |
 | `snapshot-alpha.sh` | Script to create snapshot for block volumes using Kubernetes v1alpha1 Snapshot API. For this to work the Alpha API needs to be enabled. |
 | `snapshot-beta.sh` | Script to create snapshot for block volumes using Kubernetes v1beta1 Snapshot API. For this to work the Beta API needs to be enabled. |
@@ -39,7 +49,8 @@ vi metallb/metallb-config.yaml
 Next we can deploy metallb to our cluster, using the install script:
 
 ```
-metallb/install-metallb.sh
+cd metallb
+./install-metallb.sh
 ```
 
 
