@@ -1,0 +1,8 @@
+apiVersion: snapshot.storage.k8s.io/v1beta1
+kind: VolumeSnapshot
+metadata:
+  name: fio-snapshot
+spec:
+  volumeSnapshotClassName: pure-snapshotclass
+  source:
+    persistentVolumeClaimName: dbench-pv-claim-block
