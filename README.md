@@ -4,7 +4,7 @@ Pure Service Orchestrator™ Explorer (PSO Explorer) provides a unified view int
 
 ## What does the demo do?
 
-This demo provides a set of scripts and YAML files which can be used to install [PSO](https://github.com/purestorage/helm-charts/), [PSO Explorer](https://github.com/PureStorage-OpenConnect/pso-explorer), [Metal LoadBalancer](https://metallb.universe.tf/). In addition it privides a script to deploy some workloads on the Kubernetes cluster.
+This demo provides a set of scripts and YAML files which can be used to install [PSO](https://github.com/purestorage/helm-charts/), [PSO Explorer](https://github.com/PureStorage-OpenConnect/pso-explorer) and optionally [Metal LoadBalancer](https://metallb.universe.tf/). In addition it privides a script to deploy some workloads on the Kubernetes cluster.
 
 ## Software Pre-Requisites
 You need to following:
