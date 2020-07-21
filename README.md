@@ -1,6 +1,6 @@
 # Demo scripts for Pure Service Orchestrator™ Explorer
 
-Pure Service Orchestrator™ Explorer (PSO Explorer) provides a unified view into storage, empowering Kubernetes admins and storage admins with 360-degree container storage visibility. The collection of scripts in this repo allow you to demonstrate the features of PSO Explorer.
+Pure Service Orchestrator™ Explorer (PSO Explorer) provides a unified view into storage, empowering Kubernetes admins and storage admins with 360-degree container storage visibility. The collection of scripts in this repo allow you to demonstrate some of the features of PSO Explorer.
 
 ## What does the demo do?
 
