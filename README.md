@@ -22,7 +22,7 @@ You do not need to have PSO or PSE Explorer installed on the cluster.
 | `install-pso-bad.sh` | Script to install Pure Service Orchestrator™ on your cluster with a faulty configuration, which will allow you to show the YAML verification feature of PSO Explorer. |
 | `upgrade-pso-good.sh` | Script to upgrade Pure Service Orchestrator™ configuration to a working configuration. Make sure you add your own FlashArray / FlashBlade credentials to `values-good.yaml`. |
 | `upgrade-pso-bad.sh` | Script to upgrade Pure Service Orchestrator™ configuration to a faulty configuration, which will allow you to show the YAML verification feature of PSO Explorer. |
-| `remove_pso.sh` | Script to uninstall Pure Service Orchestrator™ from the Kubernetes cluster |
+| `remove_pso.sh` | Script to uninstall both Pure Service Orchestrator™ and PSO Explorer from the Kubernetes cluster |
 | `deploy_workloads.sh` | Script to deploy some workloads: 4x Wordpress deployment, 2x Workbench block, 1x Workench file, 1x Elastic Search (3-node cluster) |
 | `snapshot-alpha.sh` | Script to create snapshot for block volumes using Kubernetes v1alpha1 Snapshot API. For this to work the Alpha API needs to be enabled. |
 | `snapshot-beta.sh` | Script to create snapshot for block volumes using Kubernetes v1beta1 Snapshot API. For this to work the Beta API needs to be enabled. |
